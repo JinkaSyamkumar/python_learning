@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee>
+    <id></id>
+    <name></name>
+    <base_branch></base_branch>
+    <skill name="Python"/>
+    <skill name="C#"/>
+    <skill name="HTML"/>
+    <skill name="Javascript"/>
+</employee>
