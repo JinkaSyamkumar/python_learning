@@ -1,0 +1,30 @@
+.myfooter{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  /* width: 100%; */
+  /* height: 30px; */
+  /* z-index: 99; */
+  background: lightgrey;
+  border: none;
+  outline: none;
+  /* padding:30px; */
+}
+.full-width-input {
+  width: 100%;
+      /* z-index: 100;
+      background: #fafafa; */
+  /* background: #fafafa; */
+  /* border-top-right-radius: 10px;
+  border-top-left-radius: 10px; */
+}
+mat-card {
+  /* max-width: 400px;
+  margin: 2em auto; */
+  text-align: center;
+}
+/* Font color in the input field*/
+input.mat-input-element {
+  color: black;
+}

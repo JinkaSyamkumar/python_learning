@@ -1,0 +1,164 @@
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+  /* background-color: forestgreen; */
+  color: #fff;
+}
+
+.mat-standard-chip {
+  display: block;
+}
+
+/* .userMessage[_ngcontent-c1] {
+  border-radius: 10px;
+  background: black;
+  text-align: center;
+  max-width: 60vw;
+  right: 0;
+} */
+
+mat-sidenav-container {
+  margin:0;
+  height: 100%;
+  width:100%;
+}
+/* .toptoolbar {
+  z-index: -1 !important;
+} */
+.sidenav {
+  width: 200px;
+  box-shadow: 3px 0 6px rgba(0,0,0,.24);
+}
+.mat-elevation-z1 {
+  position: fixed;
+  z-index: 1;
+}
+.mat-elevation-z2 {
+  position: fixed;
+  z-index: 4;
+}
+
+.my-content {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.bot-card{
+  padding-left: 20px;
+  /* z-index: -2 !important; */
+  /* width:100%; */
+}
+
+.bot-card-content{
+  min-height: 70vh;
+  max-height: 70vh;
+  overflow-y: scroll;
+  overflow-x: visible;
+}
+
+
+.agentChip{
+  padding:10px;
+  margin-right: auto;
+  margin-left: 0px;
+  float:left;
+  align-items:inherit!important;
+}
+
+.agentMessage{
+  border-radius: 10px;
+  background: blue;
+  max-width:60vw;
+}
+
+.timeform {
+  float: right;
+  width: 100%;
+}
+.timeform i {
+  margin-left: 20px;
+}
+.timeform .timestamp {
+  font-size: 0.6em;
+}
+
+.userMessage{
+  border-radius: 10px;
+  background: black;
+  /* text-align: right; */
+  text-align: center;
+  max-width:60vw;
+  right :0;
+}
+.userChip{
+  padding:10px;
+  margin-right: 0px;
+  margin-left: auto;
+  float:right;
+  align-items:flex-end!important;
+}
+
+.timeform1 {
+  float: right;
+  width: 100%;
+  text-align: right;
+}
+.timeform1 i {
+  margin-right: 20px;
+}
+.timeform1 .timestamp1 {
+  font-size: 0.6em;
+}
+
+/* Not required */
+
+/* 
+.app-toolbar-filler {
+  flex: 1 1 auto;
+} */
+
+/* .user {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 300;
+  color: #6aea96;
+  padding: 2px;
+  border-radius: 3px;
+  border: solid 1px #6aea96;
+  background: rgba(255,255,255,0);
+  margin-left: 5px;
+} */
+
+/* .typeArea{
+  padding-left: 20px;
+}
+.bot-card-header{
+  background-color: #e91e63;
+
+}
+.imgavatar{
+  background-color: rgb(185, 65, 111);
+  font-size: 30px; border: 2px solid rgb(211, 211, 211);
+  border-radius: 50%;
+  text-align: center;
+} 
+
+.myfooter{
+  overflow-y: hidden;
+  overflow-x: visible;
+  padding-left: 40px;
+  margin:2% 2%;
+  min-height:1vh;
+}
+.myicon{
+  padding-right:30px;
+}
+.inputText{
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+} */
+
+
+

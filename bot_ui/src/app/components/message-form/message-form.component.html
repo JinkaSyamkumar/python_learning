@@ -1,0 +1,11 @@
+<mat-card class="myfooter">
+
+    <mat-card-content>
+    <mat-form-field floatLabel="never" color="secondary" appearance="outline" (keyup.enter)="sendMessage()"
+        class="full-width-input">
+        <input type="text" #userMessage matInput placeholder="Ask Teeku something.." [(ngModel)]="message.content" maxlength="140">
+        <mat-icon matSuffix color="accent" style="cursor: pointer;"(click)=sendMessage()>send</mat-icon>
+        <mat-hint align="end"> {{ userMessage.value.length}} / 60</mat-hint>
+      </mat-form-field>
+  </mat-card-content>
+</mat-card>
