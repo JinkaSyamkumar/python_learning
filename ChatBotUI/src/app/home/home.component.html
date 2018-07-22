@@ -1,0 +1,61 @@
+<ng-container>
+    <mat-toolbar color="primary" class="bot-header mat-elevation-z4">
+        <mat-icon aria-label="message"> question_answer</mat-icon>
+        <span>Teeku Bot</span>
+    </mat-toolbar>
+
+    <mat-sidenav-container class="chat-container">
+
+        <mat-sidenav-content #commentEl id="commentEl" [scrollTop]="scrolltop"  >
+
+            <!-- <mat-card class="mycard">
+                <mat-card-content  #scrollMe [scrollTop]="scrollMe.scrollHeight"> -->
+            <div layout="column" style="float:left;width:100%;margin:20px 0px;">
+                <mat-chip-list dense *ngFor="let msg of messages">
+                    <div *ngIf="msg.sender == 'bot'" class="agentChip" layout="row" layout-align="center start">
+                        <img [src]="msg.avatar" class="mat-card-avatar message-avatar">
+                        <mat-chip [ngStyle]="{'class': msg.wait? 'waiting' : 'agentMessage' }" color="accent" selected="true">
+                            <div *ngIf="msg.wait == true">
+                                <li class="waiting">
+                                    <span>●</span>
+                                    <span>●</span>
+                                    <span>●</span>
+                                    <span>●</span>
+                                </li>
+                            </div>
+                            <div *ngIf="msg.wait == false">
+                                {{msg.content}}
+                            </div>
+                        </mat-chip>
+                        <div *ngIf="msg.wait == false" class="timeform">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <span class="timestamp">at {{msg.timestamp | date : 'dd/MM/yyyy HH:mm:ss a' }}</span>
+                        </div>
+                    </div>
+                    <div *ngIf="msg.sender != 'bot'" class="userChip" layout="row" layout-align="center end">
+                        <mat-chip class="userMessage" color="primary" selected="true">{{msg.content}}</mat-chip>
+                        <div class="timeform1">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <span class="timestamp1">at {{msg.timestamp | date : 'dd/MM/yyyy HH:mm:ss a' }}</span>
+                        </div>
+                    </div>
+                </mat-chip-list>
+            </div>
+
+                <!-- </mat-card-content>
+            </mat-card> -->
+        </mat-sidenav-content>
+
+    </mat-sidenav-container>
+    <!-- <app-message-form [message]="message" [messages]="messages"></app-message-form> -->
+    <mat-card class="bot-footer">
+            <mat-card-content>
+            <mat-form-field floatLabel="never" color="secondary" appearance="outline" (keyup.enter)="sendMessage()"
+                class="full-width-input">
+                <input type="text" #userMessage matInput placeholder="Ask Teeku something.." [(ngModel)]="message.content"  maxlength="140">
+                <mat-icon matSuffix color="accent" style="cursor: pointer;"(click)=sendMessage()>send</mat-icon>
+                <mat-hint align="end"> {{ userMessage.value.length}} / 60</mat-hint>
+              </mat-form-field>
+          </mat-card-content>
+        </mat-card>
+</ng-container>

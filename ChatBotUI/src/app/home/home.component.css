@@ -1,0 +1,225 @@
+.bot-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .spacer {
+    height: 2000px;
+  }
+
+  .chat-container {
+    position: absolute;
+    top: 60px;
+    bottom: 120px;
+    left: 0;
+    right: 0;
+  
+  }
+  .mat-elevation-z4{
+    position: fixed;
+    z-index: 4;
+
+  }
+
+  .mycard{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+  }
+  /* .mat-sidenav-content::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+  }
+  
+  .mat-sidenav-content::-webkit-scrollbar-thumb {
+      background: yellow; 
+      border-radius: 10px;
+  }
+  .mat-sidenav-content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+} */
+
+/**  STYLE 6 */
+.mat-sidenav-content{
+  scroll-behavior: smooth;
+}
+.mat-sidenav-content::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+.mat-sidenav-content::-webkit-scrollbar-track {
+  
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+  background-clip: content-box;
+}
+
+.mat-sidenav-content::-webkit-scrollbar-thumb {
+	background-color: #F90;	
+	background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+                        transparent);
+           
+}
+  .mat-drawer-content {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.bot-footer{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: lightgrey;
+  border: none;
+  outline: none;
+}
+
+
+.full-width-input {
+  width: 100%;
+}
+mat-card {
+  text-align: center;
+}
+/* Font color in the input field*/
+input.mat-input-element {
+  color: black;
+}
+
+
+  .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+    /* background-color: forestgreen; */
+    color: #fff;
+  }
+  
+  .mat-standard-chip {
+    display: block;
+  }
+
+  table, th, td 
+{
+    margin: 10px 0;
+    border: solid 1px #333;
+    padding: 2px 4px;
+    font: 15px Verdana;
+}
+th {
+    font-weight:bold;
+}
+.waiting {
+  margin: 1px 13px;
+  background: transparent;
+  padding: 0;
+  list-style-type: none;
+  color: white;
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+.waiting span {
+  /* font-size: 1.2em; */
+  line-height: 18px;
+  font-size: 13px;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.waiting span:nth-child(1) {
+  animation-delay: 0s;
+}
+.waiting span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.waiting span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+.waiting span:nth-child(4) {
+  animation-delay: 1s;
+}
+
+.bot-card{
+  padding-left: 20px;
+  /* z-index: -2 !important; */
+  /* width:100%; */
+}
+
+/* .bot-card-content{
+  min-height: 70vh;
+  max-height: 70vh;
+  overflow-y: scroll;
+  overflow-x: visible;
+} */
+
+
+.agentChip{
+  padding:10px;
+  margin-right: auto;
+  margin-left: 0px;
+  float:left;
+  align-items:inherit!important;
+}
+
+.agentMessage{
+  border-radius: 10px;
+  background: blue;
+  max-width:60vw;
+}
+
+.timeform {
+  float: right;
+  width: 100%;
+}
+.timeform i {
+  margin-left: 20px;
+}
+.timeform .timestamp {
+  font-size: 0.6em;
+}
+
+.userMessage{
+  border-radius: 10px;
+  background: black;
+  /* text-align: right; */
+  text-align: center;
+  max-width:60vw;
+  right :0;
+}
+.userChip{
+  padding:10px;
+  margin-right: 0px;
+  margin-left: auto;
+  float:right;
+  align-items:flex-end!important;
+}
+
+.timeform1 {
+  float: right;
+  width: 100%;
+  text-align: right;
+}
+.timeform1 i {
+  margin-right: 20px;
+}
+.timeform1 .timestamp1 {
+  font-size: 0.6em;
+}
